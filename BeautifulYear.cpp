@@ -8,5 +8,5 @@ int main()
     int n;
     cin >> n;
 
-    return 0;
+        return 0;
 }
