@@ -1,53 +1,34 @@
 #include <iostream>
-#include <algorithm>
-#include <vector>
-
+#include <string>
 using namespace std;
 
 int main()
 {
+    int n, m;
+    cin >> n >> m;
 
-    int n;
-    cin >> n;
-
-    int m;
-    cin >> m;
-
-    vector<vector<int>> nums(n, vector<int>(m));
+    char prevColor = '\0';
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < m; j++)
+        string row;
+        cin >> row;
+        char c = row[0];
+        for (char ch : row)
         {
-            cin >> nums[i][j];
-        }
-    }
-
-    bool x = 1;
-    int k = 0;
-    int target = 0;
-    for (int i = 0; i < n; i++)
-    {
-
-        target = nums[i][k];
-        for (int j = 0; j < m; j++)
-        {
-            if (nums[i][j] != target)
+            if (ch != c)
             {
-                x = 0;
-                break;
+                cout << "NO\n";
+                return 0;
             }
         }
-        k++;
+        if (prevColor != '\0' && c == prevColor)
+        {
+            cout << "NO\n";
+            return 0;
+        }
+        prevColor = c;
     }
 
-    if (x == 1)
-    {
-        cout << "YES";
-    }
-    else
-    {
-        cout << "NO";
-    }
-
+    cout << "YES\n";
     return 0;
 }
