@@ -1,0 +1,1 @@
+{"name":"Local: loveStory","url":"c:\\Users\\ankit\\Videos\\Codeforces\\loveStory.cpp","tests":[{"id":1776781619788,"input":"5\ncoolforsez\ncadafurcie\ncodeforces\npaiuforces\nforcescode","output":"4\n5\n0\n4\n9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ankit\\Videos\\Codeforces\\loveStory.cpp","group":"local","local":true}
