@@ -1,0 +1,1 @@
+{"name":"Local: trickySum","url":"c:\\Users\\ankit\\Videos\\Codeforces\\900\\trickySum.cpp","tests":[{"id":1779432093354,"input":"2\n4\n1000000000","output":"-4\n499999998352516354"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ankit\\Videos\\Codeforces\\900\\trickySum.cpp","group":"local","local":true}
