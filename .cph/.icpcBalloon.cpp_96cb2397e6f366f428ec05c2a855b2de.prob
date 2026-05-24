@@ -1,0 +1,1 @@
+{"name":"Local: icpcBalloon","url":"c:\\Users\\ankit\\Videos\\Codeforces\\icpcBalloon.cpp","tests":[{"id":1779554980618,"input":"6\n3\nABA\n1\nA\n3\nORZ\n5\nBAAAA\n4\nBKPT\n10\nCODEFORCES","output":"5\n2\n6\n7\n8\n17"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ankit\\Videos\\Codeforces\\icpcBalloon.cpp","group":"local","local":true}
