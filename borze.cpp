@@ -8,25 +8,28 @@ int main()
     string s;
     cin >> s;
 
-    int count = 0;
     string a = "";
 
-    for (int i = 0; i < s.size(); i++)
-    {
+    int i = 0;
 
-        if (s[i] == '.')
-        {
-            char b = count + '0';
-            a = a + b;
-            count = 0;
+    while(i <s.size()){
+
+        if(s[i] == '.'){
+            a = a + '0';
+            i++;
         }
-        else
-            count++;
-    }
-    char b = count + '0';
-            a = a + b;
+        else if(s[i] == '-' && s[i+1] == '.'){
+            a = a + '1';
+            i = i + 2;
+        }
+        else if(s[i] == '-' && s[i+1] == '-'){
+            a = a + '2';
+            i = i + 2;
+        }
 
-    cout << a;
+    }
+
+    cout<<a;
 
     return 0;
 }
