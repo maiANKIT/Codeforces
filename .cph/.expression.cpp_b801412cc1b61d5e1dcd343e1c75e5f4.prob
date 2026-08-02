@@ -1,0 +1,1 @@
+{"name":"Local: expression","url":"c:\\Users\\ankit\\Videos\\Codeforces\\expression.cpp","tests":[{"id":1785603734820,"input":"1\n2\n3","output":"9"},{"id":1785603745861,"input":"2\n10\n3","output":"60"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ankit\\Videos\\Codeforces\\expression.cpp","group":"local","local":true}
