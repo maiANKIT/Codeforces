@@ -1,0 +1,1 @@
+{"name":"Local: gravityFlip","url":"c:\\Users\\ankit\\Videos\\Codeforces\\gravityFlip.cpp","tests":[{"id":1786209738070,"input":"4\n3 2 1 2","output":"1 2 2 3 "},{"id":1786209747433,"input":"3\n2 3 8","output":"2 3 8 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ankit\\Videos\\Codeforces\\gravityFlip.cpp","group":"local","local":true}
