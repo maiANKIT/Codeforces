@@ -6,22 +6,53 @@ int main()
 {
 
     int n;
-    cin>>n;
+    cin >> n;
 
-    int sum = 0;
-    for(int i = 0; i<n; i++){
-        int a;
-        cin>>a;
+    vector<int> nums(n);
 
-        sum += a;
+    for (int i = 0; i < nums.size(); i++)
+        cin >> nums[i];
+
+    sort(nums.begin(), nums.end());
+
+    int i = 0, j = nums.size() - 1;
+
+    int count = 0;
+    while (i <= j)
+    {
+
+        if (nums[j] == 4)
+        {
+            count++;
+            j--;
+        }
+        else
+        {
+
+            int sum = nums[j];
+
+            if (nums[i] + sum > 4)
+            {
+                j--;
+                count++;
+            }
+            else
+            {
+                while (sum < 4)
+                {
+
+                    sum += nums[i];
+                    if(sum <= 4)
+                    i++;
+                }
+                j--;
+                count++;
+            }
+            sum = 0;
+        }
     }
 
-    int x = sum % 4;
-    int y = sum / 4;
+    cout << count;
 
-    if(x > 0) y++;
-
-    cout<<y;
-
-   return 0;
+    return 0;
 }
