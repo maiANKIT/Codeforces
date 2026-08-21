@@ -1,0 +1,1 @@
+{"name":"Local: chatRoom","url":"c:\\Users\\ankit\\Videos\\Codeforces\\chatRoom.cpp","tests":[{"id":1787330852516,"input":"ahhellllloou","output":"YES"},{"id":1787330863183,"input":"hlelo","output":"NO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ankit\\Videos\\Codeforces\\chatRoom.cpp","group":"local","local":true}
