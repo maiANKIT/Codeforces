@@ -15,7 +15,7 @@ int main()
 
         if(360/(180 - a) >= 3 && 360%(180 - a) == 0) cout<<"YES"<<endl;
         else cout<<"NO"<<endl;
-
+b
     }
 
    return 0;
