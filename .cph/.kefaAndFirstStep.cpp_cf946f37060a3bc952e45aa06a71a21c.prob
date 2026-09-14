@@ -1,0 +1,1 @@
+{"name":"Local: kefaAndFirstStep","url":"c:\\Users\\ankit\\Videos\\Codeforces\\kefaAndFirstStep.cpp","tests":[{"id":1789406025555,"input":"6\n2 2 1 3 4 1","output":"3"},{"id":1789406045062,"input":"3\n2 2 9","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ankit\\Videos\\Codeforces\\kefaAndFirstStep.cpp","group":"local","local":true}
