@@ -24,13 +24,12 @@ int main()
         int c = 0, p = 0;
 
         while(c < a.size()){
-
             p = p * 10 + (a[0] - 48);
             c++;
 
         }
 
-        if(p <= n) ans++;
+        if(p<=n) ans++;
         
         cout<<ans<<endl;
 
