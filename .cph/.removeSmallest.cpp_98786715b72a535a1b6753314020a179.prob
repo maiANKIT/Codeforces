@@ -1,0 +1,1 @@
+{"name":"Local: removeSmallest","url":"c:\\Users\\ankit\\Videos\\Codeforces\\removeSmallest.cpp","tests":[{"id":1790095919319,"input":"5\n3\n1 2 2\n4\n5 5 5 5\n3\n1 2 4\n4\n1 3 4 4\n1\n100","output":"YES\nYES\nNO\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ankit\\Videos\\Codeforces\\removeSmallest.cpp","group":"local","local":true}
