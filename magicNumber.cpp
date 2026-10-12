@@ -18,6 +18,7 @@ int main()
     }
 
     if(x == 0) cout<<"NO";
+    else if(s[0] == '4') cout<<"NO";
     else{
 
         string f = "444";
