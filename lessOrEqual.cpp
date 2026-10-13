@@ -14,8 +14,6 @@ int main()
 
     sort(nums.begin(), nums.end());
 
-    long long count = 0;
-
     if(k == 0){
         int x = nums[0] - 1;
         if(x == 0) cout<<-1;
