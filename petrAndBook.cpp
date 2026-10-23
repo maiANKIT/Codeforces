@@ -18,11 +18,8 @@ int main()
     while(n > 0){
 
         n -= nums[i];
-
         i++;
-
         if(i == 7) i = 0;
-
         count++;
 
     }
