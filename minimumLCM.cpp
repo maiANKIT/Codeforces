@@ -3,8 +3,10 @@
 
 using namespace std;
 
-long long gcd(long long a, long long b) {
-    while (b != 0) {
+long long gcd(long long a, long long b)
+{
+    while (b != 0)
+    {
         long long rem = a % b;
         a = b;
         b = rem;
@@ -16,40 +18,34 @@ int main()
 {
 
     long long t;
-    cin>>t;
+    cin >> t;
 
-    while(t--){
+    while (t--)
+    {
 
         long long n;
-        cin>>n;
+        cin >> n;
 
-        long long a = 1;
-        long long b = n - a;
-    
-        long long ansA = a, ansB = b;
+        long long s = 0;
 
-        long long mini = (a / gcd(a, b)) * b;
+        for (int i = 2; i * i <= n; i++)
+        {
 
-        while(a <= b){
+            if (n % i == 0)
+            {
 
-            long long lcm = (a / gcd(a, b)) * b;
-
-            if(mini > lcm){
-
-                mini = lcm;
-                ansA = a;
-                ansB = b;
-
+                s = i;
+                break;
             }
-
-            a++;
-            b--;
-
         }
 
-        cout<<ansA<<" "<<ansB<<endl;
-
+        if (s == 0)
+            cout << 1 << " " << n - 1 << endl;
+        else
+        {
+            cout << n / s << " " << n - n/s << endl;
+        }
     }
 
-   return 0;
+    return 0;
 }
