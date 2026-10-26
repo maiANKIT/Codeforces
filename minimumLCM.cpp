@@ -30,10 +30,8 @@ int main()
 
         for (int i = 2; i * i <= n; i++)
         {
-
             if (n % i == 0)
             {
-
                 s = i;
                 break;
             }
@@ -43,7 +41,7 @@ int main()
             cout << 1 << " " << n - 1 << endl;
         else
         {
-            cout << n / s << " " << n - n/s << endl;
+            cout << n / s << " " << n - n / s << endl;
         }
     }
 
