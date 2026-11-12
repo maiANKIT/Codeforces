@@ -6,36 +6,65 @@ int main()
 {
 
     int t;
-    cin>>t;
+    cin >> t;
 
-    while(t--){
+    while (t--)
+    {
 
         long long a, b;
-        cin>>a>>b;
+        cin >> a >> b;
 
-        long long count = 0;
-        
-        while(a > 0){
+        if (a < b)
+            cout << 1 << endl;
+        else
+        {
+            int count = 0;
 
-            long long tempb2 = b+1;
-
-            long long a1 = a / b;
-            long long a2 = a / tempb2;
-
-            if(a1 > a2){
-                a = a2;
-            }
-            else{
-                a = a1;
+            if (b == 1)
+            {
+                count++;
                 b++;
             }
-            count++;
 
+            if (a % 2 != 0 && b % 2 != 0)
+            {
+                b++;
+                count++;
+            }
+
+            while (a > b)
+            {
+                count++;
+                a /= b;
+                
+                if(b%2 == 0 && a % 2 == 0){
+                    b++;
+                    count++;
+                }
+                else if(b%2 == 0 && a % 2 != 0){
+                    b++;
+                    count++;
+                }
+                else if (b % 2 == 0)
+                {
+                    b++;
+                    count++;
+                }
+                
+            }
+
+            if (a == b)
+            {
+                count += 2;
+            }
+            else
+            {
+                count++;
+            }
+
+            cout << count << endl;
         }
-
-        cout<<count<<endl;
-
     }
 
-   return 0;
+    return 0;
 }
