@@ -18,9 +18,6 @@ int main()
         cin>>nums2[i];
     }
 
-    // sort(nums.begin(), nums.end());
-    // sort(nums2.begin(), nums2.end());
-
     long long count = 0;
 
     long long sum = nums[0];
@@ -30,17 +27,17 @@ int main()
 
     for(int i = 0; i<n; i++){
 
-        c[i] = nums[i] - nums2[i];
+        nums[i] = nums[i] - nums2[i];
 
     }
 
-    sort(c.begin(), c.end());
+    sort(nums.begin(), nums.end());
 
     long long i = 0, j = n - 1;
 
     while(i < j){
 
-        if(c[i] + c[j] > 0){
+        if(nums[i] + nums[j] > 0){
 
             count += j - i;
             j--;
